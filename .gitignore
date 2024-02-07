@@ -1,0 +1,8 @@
+*.jpg
+*.png
+*.cdr
+*.psd
+
+certificates/
+img/
+pruebas/

@@ -1,16 +1,11 @@
-//Menu lateral
 var menu_visible = false;
 var menu = document.getElementById("nav");
 
 function showHideMenu(){
-    if(menu_visible == false){//si esta oculto
+    if(menu_visible == false){
         menu.style.display="grid";
         menu.style.placeItems="center";
         menu.style.zIndex=1;
-        /* style.border ="2px solid #fff"; */
-        /* border: 2px solid #fff; */
-        /* display: grid;
-    place-items: center; */
         menu_visible = true;
     }
     else{
@@ -21,22 +16,15 @@ function showHideMenu(){
 }
 
 
-
-
-
-
-
 const btnLeft = document.querySelector(".btn-left"),
     btnRight = document.querySelector(".btn-right"),
     slider = document.querySelector("#slider"),
     sliderSection = document.querySelectorAll(".slider-section");
 
-/* console.log(sliderSection); */
 
 btnLeft.addEventListener("click", e => moveToLeft());
 btnRight.addEventListener("click", e => moveToRight());
 
-/* Cada 3 segundos se va a ejecutar la función moveToRight */
 setInterval(() => {
     moveToRight()
 }, 3000);
@@ -46,11 +34,10 @@ let operacion = 0,
     withImg = 100 / sliderSection.length;
 
 function moveToRight(){
-    /* console.log(counter); */
     if(counter >= sliderSection.length-1){
         counter = 0;
         operacion = 0;
-        slider.style.transform = `translate(-${operacion}%)`;/* Movimiento hacia los valores negativos */
+        slider.style.transform = `translate(-${operacion}%)`;
         slider.style.transition = "none";
         return;
     }
