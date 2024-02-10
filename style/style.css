@@ -424,3 +424,49 @@ main {
         letter-spacing: 1px;
     }
   }
+
+  @media (min-width: 1100px) {
+    .greetings p:first-child {
+        margin-left: 33vw;
+    }
+    .greetings p:nth-of-type(2) {
+        margin-right: 26vw;
+    }
+    .greetings p:first-child,
+    .greetings p:nth-of-type(2) {
+        font-size: 1.7rem;
+    }
+    .section-carousel ul {
+        font-size: 15px;
+        column-count: 3;
+        padding-bottom: 20px;
+    }
+    .section-carousel {
+        height: 1100px;
+    }
+    .container-carousel {
+        width: 95%;
+        height: 750px;
+    }
+    .qualities {
+        font-size: 25px;
+    }
+    .container-courses {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .course {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .course img {
+        width: 45%;
+    }
+    .container-dataCourse{
+        margin-top: 0;
+    }
+  }
