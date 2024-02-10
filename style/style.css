@@ -470,3 +470,53 @@ main {
         margin-top: 0;
     }
   }
+  @media (min-width: 1600px) {
+    .sectionName h1 {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+    .sectionName h2 {
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+    .greetings p:first-child {
+        margin-left: 39vw;
+    }
+    .greetings p:nth-of-type(2) {
+        margin-right: 34vw;
+    }
+    .sectionMain1 {
+        height: 500px;
+    }
+    .presentation p{
+        font-size: 17px;
+        letter-spacing: 0.5px;
+    }
+    .presentation p a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    .workExperienceTitle {
+        font-size: 37px;
+    }
+    .textWork,
+    .section-carousel ul{
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+    .section-carousel {
+        height: 1150px;
+    }
+    .container-carousel {
+        width: 90%;
+        height: 800px;
+    }
+    .qualities {
+        font-size: 27px;
+    }
+    .container-courses {
+        width: 80%;
+        grid-gap: 40px;
+    }
+  }
