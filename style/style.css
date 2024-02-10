@@ -380,3 +380,47 @@ main {
         margin-top: 20px;
     }
 }
+
+@media (min-width: 800px) {
+    .greetings p:first-child {
+        margin-left: 25vw;
+    }
+    .greetings p:nth-of-type(2) {
+        margin-right: 15vw;
+    }
+    .greetings p:first-child,
+    .greetings p:nth-of-type(2) {
+        font-size: 1.6rem;
+        margin-top: 35px;
+    }
+    .workExperienceTitle {
+        margin-top: 15px;
+    }
+    .container-carousel {
+        width: 93%;
+        height: 500px;
+    }
+    .container-courses {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 35px;
+    }
+    .course {
+        width: 93%;
+        display: flex;
+    }
+    .course img {
+        width: 40%;
+        border-top-right-radius: 00px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .container-dataCourse{
+        width: 100%;
+        margin: 10px 20px 0 20px;
+        text-align: left;
+    }
+    .title-course {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+  }
