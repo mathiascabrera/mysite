@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:ital,wght@0,300;1,500&family=Titillium+Web:wght@200;300;400;600;700&family=Ubuntu:wght@500&family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-*{
+* {
     font-family: "Titillium Web";
     margin: 0;
     padding: 0;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
-header{
+.header {
     height: 400px;
+    background-color: #fff;
 }
-header .nav-bar{
+header .nav-bar {
     position: fixed;
     text-align: center;
     background-color: #fff;
@@ -27,41 +28,41 @@ header .nav-bar{
     transition: .3s;
     z-index: 2;
 }
-.containerNav{
+.containerNav {
     position: fixed;
     display: none;
     width: 150px;
     height: 150px;
     margin-top: 20px;
     margin-left: 54px;
-    background-color: rgba(0, 0, 0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     border: 2px solid black;
     border-radius: 0% 20% 20% 35%;
 }
-nav a{
+nav a {
     text-decoration: none;
     font-weight: bold;
-    color:#fff;
+    color: #fff;
 }
-nav a:hover{
+nav a:hover {
     color: rgb(14, 139, 197);
 }
-.sectionName{
+.sectionName {
     display: flex;
     text-align: center;
     justify-content: center;
     padding-top: 100px;
 }
-.sectionName h1{
+.sectionName h1 {
     font-size: 40px;
 }
-.sectionName h2{
+.sectionName h2 {
     font-weight: normal;
     font-size: 20px;
     letter-spacing: 3px;
 }
-.greetings{
+.greetings {
     width: 100%;
     height: 100px;
     margin-top: 40px;
@@ -69,22 +70,22 @@ nav a:hover{
     justify-content: space-between;
 }
 .greetings p:first-child {
-    font-family:"Dancing Script";
+    font-family: "Dancing Script";
     font-size: 1.2rem;
     margin-top: 25px;
     margin-left: 30px;
     transform: rotate(-10deg);
 }
-.greetings p:nth-of-type(2){
-    font-family:"Dancing Script";
+.greetings p:nth-of-type(2) {
+    font-family: "Dancing Script";
     font-size: 1.2rem;
     margin-right: 10px;
     transform: rotate(-10deg);
 }
-main{
+main {
     position: relative;
 }
-.sectionMain1{
+.sectionMain1 {
     height: 450px;
     background-color: black;
     display: flex;
@@ -95,8 +96,8 @@ main{
     height: 200px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
-    border-left-color:black;
-    border-right-color:black;
+    border-left-color: black;
+    border-right-color: black;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -104,19 +105,19 @@ main{
     padding: 20px;
     z-index: 1;
 }
-.sectionMain1 div img{
+.sectionMain1 div img {
     width: 90%;
     position: absolute;
     bottom: 6%;
 }
-.sectionMain1 div img:hover{
+.sectionMain1 div img:hover {
     width: 92%;
     background: transparent;
     border-radius: 10px;
-    filter: drop-shadow(0px 0px 10px rgb(0,0,0,0.5));
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.5));
     cursor: pointer;
 }
-.icons-main{
+.icons-main {
     width: 350px;
     height: 180px;
     display: flex;
@@ -124,62 +125,61 @@ main{
     z-index: 1;
     top: 5px;
 }
-.icons-main a{
+.icons-main a {
     text-decoration: none;
     font-size: 25px;
-    color : rgb(52, 52, 52);
+    color: rgb(52, 52, 52);
 }
-.icons-main a:first-child{
+.icons-main a:first-child {
     padding-left: 5px;
 }
-.icons-main a:nth-of-type(2){
+.icons-main a:nth-of-type(2) {
     margin-top: 70px;
 }
-.icons-main a:nth-of-type(3){
+.icons-main a:nth-of-type(3) {
     padding-left: 30px;
     margin-top: 120px;
 }
-.icons-main a:nth-of-type(4){
+.icons-main a:nth-of-type(4) {
     padding-left: 50px;
     margin-top: 140px;
 }
-.icons-main a:nth-of-type(5){
+.icons-main a:nth-of-type(5) {
     padding-left: 55px;
     margin-top: 120px;
 }
-
-.icons-main a:nth-of-type(6){
+.icons-main a:nth-of-type(6) {
     margin-top: 70px;
     padding-left: 40px;
 }
-.icons-main a:hover{
+.icons-main a:hover {
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
-.presentation{
+.presentation {
     position: absolute;
     margin-top: 200px;
     z-index: 3;
 }
-.presentation p{
+.presentation p {
     color: #c3c3c3;
     text-align: center;
-    letter-spacing: 0,5px;
+    letter-spacing: 0, 5px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.presentation p a{
+.presentation p a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-.section-carousel{
+.section-carousel {
     height: 850px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-    url("https://imgur.com/eHW0c6u.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url("https://imgur.com/eHW0c6u.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -188,55 +188,54 @@ main{
     align-items: center;
     justify-content: center;
 }
-.workExperienceTitle{
+.workExperienceTitle {
     font-size: 30px;
-    padding-top: 15px;
-    color:#fff;
+    color: #fff;
 }
-.textWork{
+.textWork {
     color: #c3c3c3;
     text-align: center;
-    letter-spacing: 0,5px;
-    padding-top: 10px;
+    letter-spacing: 0, 5px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
-.section-carousel ul{
-    width:85%;
+.section-carousel ul {
+    width: 85%;
     color: #c3c3c3;
-    letter-spacing: 0,5px;
+    letter-spacing: 0, 5px;
     list-style-type: "- ";
     font-size: 14px;
     column-count: 2;
     column-gap: 20px;
     padding: 15px;
 }
-.container-carousel{
+.container-carousel {
     position: relative;
     width: 80%;
     height: 300px;
     background-color: #e0e0e0;
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.66);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
     border-radius: 15px;
     overflow: hidden;
 }
-.carouseles{
+.carouseles {
     width: 300%;
     height: 100%;
     display: flex;
 }
-.slider-section{
+.slider-section {
     width: calc(100% / 3);
     height: 100%;
 }
-.slider-section img{
+.slider-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
 .btn-left,
-.btn-right{
+.btn-right {
     display: flex;
     position: absolute;
     top: 50%;
@@ -247,84 +246,137 @@ main{
     font-weight: 600;
     cursor: pointer;
     color: #ffffff81;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     transition: .5s ease;
     user-select: none;
 }
-.btn-left{
+.btn-left {
     left: 10px;
 }
-.btn-right{
+.btn-right {
     right: 10px;
 }
 .btn-left:hover,
-.btn-right:hover{
+.btn-right:hover {
     background-color: #333333d4;
     color: #fff;
 }
-.qualities{
-    color:#fff;
+.qualities {
+    color: #fff;
     padding-top: 25px;
 }
-.section-courses{
+.section-courses {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, #000000,#283048, #000000);
+    background: linear-gradient(to top, #000000, #283048, #000000);
 }
-.container-courses{
+.container-courses {
     width: 90%;
     height: auto;
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     justify-items: center;
     text-align: center;
 }
-.course{
+.course {
     width: 93%;
     height: auto;
     border-radius: 10px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(46, 46, 46, 0.5));
     box-shadow: 0 0 32px 0 rgba(16, 16, 16, 0.66);
 }
-.course img{
+.course img {
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
-.title-course{
+.title-course {
     font-size: 23px;
     letter-spacing: 1px;
     color: #ffffff;
 }
-.course-description{
+.course-description {
     margin-top: 8px;
     color: #c3c3c3;
-    letter-spacing: 0,5px;
+    letter-spacing: 0, 5px;
 }
-.url-container{
+.url-container {
     width: 100%;
     height: auto;
     margin: 20px 0 20px 0;
     display: flex;
     justify-content: center;
 }
-.url-container div{
+.url-container div {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90px;
     height: 40px;
     border-radius: 10px;
-    background-color:#2fb4cc;
+    background-color: #2fb4cc;
 }
-.url-course{
+.url-course {
     text-decoration: none;
     color: #fff;
 }
-.url-allcourses{
+.url-allcourses {
     color: #fff;
+}
+
+@media (min-width: 600px) {
+
+    .sectionName h1 {
+        font-size: 41px;
+        letter-spacing: 1px;
+    }
+    .sectionName h2 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .greetings p:first-child {
+        margin-left: 23vw;
+    }
+    .greetings p:nth-of-type(2) {
+        margin-right: 13vw;
+        margin-top: 25px;
+    }
+    .greetings p:first-child,
+    .greetings p:nth-of-type(2) {
+        font-size: 1.4rem;
+    }
+    .workExperienceTitle {
+        font-size: 33px;
+    }
+    .container-carousel {
+        width: 90%;
+        height: 350px;
+    }
+    .btn-left,
+    .btn-right {
+        font-size: 1.7rem;
+    }
+    .btn-left:hover,
+    .btn-right:hover {
+        font-size: 1.8rem;
+    }
+    .qualities {
+        font-size: 23px;
+    }
+    .container-courses {
+        margin: 20px 0 0 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .course {
+        width: 100%;
+    }
+    .url-allcourses {
+        font-size: 20px;
+        margin-top: 20px;
+    }
 }
