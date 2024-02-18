@@ -327,6 +327,143 @@ main {
 .url-allcourses {
     color: #fff;
 }
+.section-projects{
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #000000, #283048, #000000);
+}
+.container-header-projects{
+    text-align: center;
+}
+.container-projects{
+    width: 90%;
+    height: auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+}
+.first-container-project{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.second-container-project{
+    width: 95%;
+    height: 190px;
+    background-color: #000000;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 90px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    justify-items: end;
+}
+.circle-project{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: 130px;
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-img-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+.container-img-project img{
+    width: 95%;
+    border-radius: 100px;
+}
+.third-container-project{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items:end;
+    flex-direction: column;
+}
+.container-title-project{
+    width: 60%;
+    margin-right: 35px;
+    z-index: 4;
+}
+.project-title{
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #ffffff;
+    text-indent: 20px;
+    margin-top: 10px;
+}
+.fourth-container-project{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    flex-direction: column;
+}
+.container-description-project{
+    width: 80%;
+    height: 60px;
+    padding: 1px;
+    border: 1px solid rgba(36, 34, 34,0.5);
+    border-radius: 10px;
+    margin-bottom: 55px;
+    overflow: auto;
+    z-index: 3;
+}
+.project-description{
+    font-size: 14px;
+    color: #c3c3c3;
+    letter-spacing: 0, 5px;
+}
+.fifth-container-project{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    flex-direction: column;
+}
+.container-url-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #2fb4cc;
+    margin-bottom: 15px;
+}
+.url-project{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+.url-all-repositories {
+    margin-top: 10px;
+    color: #fff;
+}
 
 @media (min-width: 600px) {
     .sectionName h1 {
