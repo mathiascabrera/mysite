@@ -460,65 +460,83 @@ main {
     margin-top: 10px;
     color: #fff;
 }
-
-
-
-
-/* .fourth-container-project{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.section-technologies{
+    height: auto;
+    background-color: red;
+    padding-top: 20px;
     display: flex;
-    justify-content: end;
-    align-items:center;
     flex-direction: column;
-}
-.container-description-project{
-    width: 80%;
-    height: 60px;
-    padding: 1px;
-    border: 1px solid rgba(36, 34, 34,0.5);
-    border-radius: 10px;
-    margin-bottom: 55px;
-    overflow: auto;
-    z-index: 3;
-}
-
-.fifth-container-project{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: end;
-    align-items:center;
-    flex-direction: column;
-}
-.container-url-project{
-    display: flex;
     justify-content: center;
+    background: linear-gradient(to top, #000000, #283048, #000000);
+}
+.container-header-technologies{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.scroller {
+    max-width: 900px;
+}
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.scroller img{
+    width: 80px;
+    height: auto;
+}
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+}
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+.scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+}
+  
+.scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+.container-end-technology{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 120px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: #2fb4cc;
-    margin-bottom: 15px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.container-i-end{
+    width: 80%;
+    height: auto;
+}
+.text-i-end{
+    color: #c3c3c3;
+    text-align: center;
+}
 
 @media (min-width: 600px) {
     .sectionName h1 {
