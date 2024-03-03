@@ -475,7 +475,7 @@ main {
     text-align: center;
 }
 .scroller {
-    max-width: 900px;
+    max-width: 2000px;
 }
 .scroller__inner {
     padding-block: 1rem;
@@ -484,8 +484,8 @@ main {
     gap: 1rem;
 }
 .scroller img{
-    width: 80px;
-    height: auto;
+    width: auto;
+    height: 70px;
 }
 .scroller[data-animated="true"] {
     overflow: hidden;
@@ -537,6 +537,92 @@ main {
     color: #c3c3c3;
     text-align: center;
 }
+.footer-end{
+    background-color: #000000;
+    height: auto;
+    padding-bottom: 5px;
+}
+.container-aboutme-footer,
+.container-contact-footer{
+    width: 100%;
+    height: auto;
+}
+.title-aboutme-footer,
+.title-contact-footer{
+    text-align: center;
+}
+.links-aboutme-footer,
+.links-contact-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons-aboutme-footer,
+.icons-contact-footer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.icons-aboutme-footer a,
+.icons-contact-footer a{
+    color: #fff;
+}
+.social-aboutme-footer,
+.social-contact-footer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.social-aboutme-footer a,
+.social-contact-footer a{
+    text-decoration: none;
+    color: #c3c3c3;
+}
+.container-map-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.map-footer{
+    width:70%;
+    height:240px;
+    border:0;
+    border-radius: 10px;
+}
+.subcontainer-text-map-footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.text-map-footer,
+.text-last-update-footer,
+.text-creater-footer{
+    color: #c3c3c3;
+    letter-spacing: 0, 5px;
+}
+.subcontainer-map-footer{
+    display: flex;
+    justify-content: center;
+}
+.container-latest-data-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.subcontainer-last-update-footer,
+.subcontainer-creater-footer{
+    max-width: 45%;
+}
+.text-last-update-footer,
+.text-creater-footer{
+    font-size: 12px;
+}
+
 
 @media (min-width: 600px) {
     .sectionName h1 {
