@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Local -->
     <link rel="stylesheet" href="./style/style.css">
-    <title>MySite</title>
+    <title>Mathias Cabrera - Full Stack .NET</title>
 </head>
-
 <body>
     <header class="header">
-        <div class="nav-bar" onclick="showHideMenu()">
-            <i class="fa-solid fa-bars"></i>
+        <div class="nav-bar" id="navbar" onclick="showHideMenu()">
+            <i class="fa-solid fa-bars iconnav" id="iconNav"></i>
+            <i class="fa-solid fa-xmark iconnavX"></i>
         </div>
         <div id="nav" class="containerNav">
             <nav>
-                <a href="#aboutme">About&nbspMe</a>
-                <a href="#workexperiencie">Work&nbspExperiencie</a>
-                <a href="#coursestaken">Courses&nbspTaken</a>
-                <a href="#myprojects">My&nbspProjects</a>
-                <a href="#technologies">Technologies</a>
+                <ul>
+                    <li><a class="ancla-nav" href="#aboutme">About&nbspMe</a></li>
+                    <li><a class="ancla-nav" href="#workexperiencie">Work&nbspExperiencie</a></li>
+                    <li><a class="ancla-nav" href="#coursestaken">Courses&nbspTaken</a></li>
+                    <li><a class="ancla-nav" href="#myprojects">My&nbspProjects</a></li>
+                    <li><a class="ancla-nav" href="#technologies">Technologies</a></li>
+                </ul>
             </nav>
         </div>
         <section id="aboutme" class="sectionName">
             <div>
-                <h1>MATHIAS&nbspCABRERA</h1>
-                <h2>FullStack&nbspDeveloper&nbsp.NET</h2>
+                <h1 class="nameTop" id="font-bold">MATHIAS&nbspCABRERA</h1>
+                <h2 class="specialtyTop">FullStack&nbspDeveloper&nbsp.NET</h2>
             </div>
         </section>
-        <div class="greetings">
-            <p>Hi&nbspthere&nbsp!</p>
-            <p>Thank you for<br>comming&nbsphere&nbsp!</p>
-        </div>
     </header>
     <main>
-        <section class="sectionMain1">
-            <div>
-                <img src="https://imgur.com/SzYqlBR.png" alt="My perfil">
+        <section class="sectionPresentation" id="sectionPresentation">
+            <div class="container-img-presentation">
+                <img class="img-presentation" src="https://imgur.com/SzYqlBR.png" alt="My perfil">
             </div>
             <div class="icons-main">
                 <a href="https://api.whatsapp.com/send?phone=541138565329" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
@@ -51,27 +53,36 @@
                 <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://github.com/mathiascabrera" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-            <div class="presentation">
-                <p>I&#39m 24 years old.<br>In addition to being a fullstack developer, I am a Computer Engineering
-                    student at <a href="https://www.unaj.edu.ar/" target="_blank">UNAJ</a>.<br>I have knowledge of the
-                    following technologies: html, css, bootstrap, javascript, vue, C# with .Net/Asp.Net and MySQL.<br>I
-                    also have knowledge of the object-oriented paradigm, data structure management, Rest API, design
-                    patterns and GIT.</p>
+            <div class="container-presentation">
+                <div class="presentation">
+                    <p class="text-presentation">I&#39m 24 years old.<br>In addition to being a fullstack developer, I am a Computer Engineering
+                        student at &nbsp<a href="https://www.unaj.edu.ar/" target="_blank">UNAJ</a>.<br>I have knowledge of the
+                        following technologies: html, css, bootstrap, javascript, vue, C# with .Net/Asp.Net and MySQL.<br>I
+                        also have knowledge of the object-oriented paradigm, data structure management, Rest API, design
+                        patterns and GIT.</p>
+                </div>
             </div>
         </section>
-        <section id="workexperiencie" class="section-carousel">
-            <h1 class="workExperienceTitle">Work Experience</h1>
-            <p class="textWork">From 2018 to the present I create advertising designs for banners, posters, window
-                decorations and vehicle graphics. At the same time I am in charge of printers, plotters, embossers and
-                laminators. During this period I gained experiences in:</p>
-            <ul>
-                <li>Prepare budgets.</li>
-                <li>Image editing using Photoshop and CorelDraw.</li>
-                <li>Inventory management.</li>
-                <li>Placing adhesive vinyls.</li>
-                <li>Assembly of posters and banners.</li>
-                <li>Preparation of decals.</li>
-            </ul>
+        <section id="workexperiencie" class="section-workExp">
+            <h1 class="workExperienceTitle" id="font-bold">Work Experience</h1>
+            <div class="container-text-work">
+                <p class="textWork">From 2018 to the present I create advertising designs for banners, posters, window
+                    decorations and vehicle graphics. At the same time I am in charge of printers, plotters, embossers and
+                    laminators. During this period I gained experiences&nbspin&nbsp:</p>
+            </div>
+            <div class="container-ul-work">
+                <ul class="ul-work">
+                    <li>Prepare budgets.</li>
+                    <li>Image editing using Photoshop and CorelDraw.</li>
+                    <li>Inventory management.</li>
+                    <li>Placing adhesive vinyls.</li>
+                    <li>Assembly of posters and banners.</li>
+                    <li>Preparation of decals.</li>
+                </ul>
+            </div>
+            <div class="container-text-preCarousel">
+                <p class="text-preCarousel">Here I share some photos of my work.</p>
+            </div>
             <div class="container-carousel">
                 <div class="carouseles" id="slider">
                     <section class="slider-section">
@@ -91,214 +102,271 @@
                     <i class='bx bx-chevron-right'></i>
                 </div>
             </div>
-            <h3 class="qualities">What are my qualities?</h3>
-            <p class="textWork">I consider that my most relevant qualities are the following:</p>
-            <ul>
-                <li>Capacity for teamwork.</li>
-                <li>Capacity to work under pressure.</li>
-                <li>Ability to share knowledge and experiences.</li>
-                <li>Positive attitude towards challenges.</li>
-                <li>Ability to calmly and effectively manage complex situations.</li>
-                <li>Receptive attitude to advice.</li>
-                <li>Empathic and understanding.</li>
-                <li>Responsibility in time management.</li>
-            </ul>
+            <div class="container-qualities">
+                <h3 class="qualities" id="font-bold">What are my qualities?</h3>
+                <p class="textQualities">I consider that my most relevant qualities are the following&nbsp:</p>
+            </div>
+            <div class="container-qualities-ul">
+                <ul class="ul-qualities">
+                    <li>Capacity for teamwork.</li>
+                    <li>Capacity to work under pressure.</li>
+                    <li>Ability to share knowledge and experiences.</li>
+                    <li>Positive attitude towards challenges.</li>
+                    <li>Ability to calmly and effectively manage complex situations.</li>
+                    <li>Receptive attitude to advice.</li>
+                    <li>Empathic and understanding.</li>
+                    <li>Responsibility in time management.</li>
+                </ul>
+            </div>
         </section>
         <section id="coursestaken" class="section-courses">
-            <h1 class="workExperienceTitle">Courses Taken</h1>
-            <p class="textWork">In addition to studying the university degree, I participated in various online courses,
-                including those detailed below:</p>
+            <h1 class="coursesTaken-title" id="font-bold">Courses Taken</h1>
+            <div class="container-coursesTaken-text">
+                <p class="coursesTaken-text">In addition to studying the university degree, I participated in various online courses,
+                    including those detailed below:</p>
+            </div>
+            
             <div class="container-courses">
                 <div class="course">
-                    <img src="https://imgur.com/FMwIr97.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Your First Conversations - Platzi</h2>
-                        <p class="course-description">Initial writing, basic pronunciation, personal descriptions,
-                            dates, times and simple expressions.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/FMwIr97.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Your First Conversations - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <!-- <a id="popoverOne" data-bs-toggle="popover" title="Your First Conversations" data-bs-trigger="focus"
+                        data-bs-content="Initial writing, basic pronunciation, personal descriptions, dates, times and simple expressions."
+                        class="btn btn-success" href="#popoverOne">Show details</a> -->
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Initial writing, basic pronunciation, personal descriptions, dates, times and simple expressions.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/1945-ingles-principiantes-2020/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/YB3d20a.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Initial Web Design - ADIMRA</h2>
-                        <p class="course-description">Web structure and layout, responsive design, domain registration, web
-                            servers, prototyping, cms and configuration of a local server.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/YB3d20a.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Initial Web Design - ADIMRA</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Web structure and layout, responsive design, domain registration, web
+                            servers, prototyping, cms and configuration of a local server.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://www.linkedin.com/in/mathiasdeveloper/details/certifications/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/fhw9mJP.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Html and Css - Platzi</h2>
-                        <p class="course-description">Semantic tags, em/rem measurements, box model, selectors, combinators,
-                            display, position, mostly fluid, layout shifter css y column drop.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/fhw9mJP.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Html and Css - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Semantic tags, em/rem measurements, box model, selectors, combinators,
+                            display, position, mostly fluid, layout shifter css y column drop.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/2008-html-css/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/r23tMiM.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Object-Oriented Programming - Platzi</h2>
-                        <p class="course-description">Abstraction, inheritance, polymorphism, encapsulation, classes,
-                            inheritance, composition and uml diagram.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/r23tMiM.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Object-Oriented Programming - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Abstraction, inheritance, polymorphism, encapsulation, classes,
+                            inheritance, composition and uml diagram.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/1474-oop/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/qt9tmpw.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Algorithms and Flowcharts. - Platzi</h2>
-                        <p class="course-description">Binary system, truth tables, logical operators, comparison operators
-                            and flowcharts.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/qt9tmpw.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Algorithms and Flowcharts - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Binary system, truth tables, logical operators, comparison operators
+                            and flowcharts.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/3221-pensamiento-logico/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/Gus5ovV.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Fundamentals, Variables and Operators in C# - Platzi</h2>
-                        <p class="course-description">Visual Studio, primitive data types, variables, logical-relational
-                            operators and control structures.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/Gus5ovV.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Fundamentals, Variables and Operators in C# - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Visual Studio, primitive data types, variables, logical-relational
+                            operators and control structures.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/3086-csharp/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/XyfZkil.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Object-Oriented Programming in C# - Platzi</h2>
-                        <p class="course-description">Principles of object-oriented programming, classes, objects, access
-                            modifiers, inheritance, composition, abstraction, polymorphism, abstract classes and interfaces.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/XyfZkil.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Object-Oriented Programming in C# - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Principles of object-oriented programming, classes, objects, access
+                            modifiers, inheritance, composition, abstraction, polymorphism, abstract classes and interfaces.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/8036-c-sharp-poo/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/UG20IZW.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Git and GitHub - Platzi</h2>
-                        <p class="course-description">GitBash, repository creation and cloning, commit, push, pull, fork,
-                            pull request, commands, branches, SSH keys, git amend, grep, cherry-pick and GitHub Pages.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/UG20IZW.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Git and GitHub - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="GitBash, repository creation and cloning, commit, push, pull, fork,
+                            pull request, commands, branches, SSH keys, git amend, grep, cherry-pick and GitHub Pages.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/1557-git-github/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/tK70Evm.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Good Practices and Clean Code in C# - Platzi</h2>
-                        <p class="course-description">Refactoring, technical debt, Code Smells, DRY, KISS, try-catch,
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/tK70Evm.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Good Practices and Clean Code in C# - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Refactoring, technical debt, Code Smells, DRY, KISS, try-catch,
                             minimalism, proper use of comments, string interpolation, property initializer and null
-                            conditional operator.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
-                                    href="https://platzi.com/p/maty.dev/curso/1557-git-github/diploma/detalle/"
+                            conditional operator.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
+                                    href="https://platzi.com/p/maty.dev/curso/4788-clean-code-csharp/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/D2kIiW2.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">SOLID Principles in C# and .NET - Platzi</h2>
-                        <p class="course-description">Single responsibility principle, open/closed principle, Liskov
-                            substitution principle, interface segregation principle and dependency inversion principle.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/D2kIiW2.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">SOLID Principles in C# and .NET - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Single responsibility principle, open/closed principle, Liskov
+                            substitution principle, interface segregation principle and dependency inversion principle.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/4761-solid-csharp-net/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/GLGfyzV.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Basic JavaScript - Platzi</h2>
-                        <p class="course-description">Variables, declarative and expressive functions, syntax, scope,
-                            hoisting, coercion, operators, array, loops and objects.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/GLGfyzV.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Basic JavaScript - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Variables, declarative and expressive functions, syntax, scope, hoisting, coercion, operators, array, loops and objects.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/1814-basico-javascript/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="course">
-                    <img src="https://imgur.com/mY17SrZ.png" alt="">
-                    <div class="container-dataCourse">
-                        <h2 class="title-course">Data Management with LINQ - Platzi</h2>
-                        <p class="course-description">Declarative and imperative programming, LINQ operators: Where, all,
+                    <div class="container-img-course">
+                        <img class="img-course" src="https://imgur.com/mY17SrZ.png" alt="">
+                    </div>
+                    <div class="container-title-course">
+                        <h2 class="title-course" id="font-bold">Data Management with LINQ - Platzi</h2>
+                    </div>
+                    <div class="container-butons-courses">
+                        <div class="container-buton-details-course">
+                            <button type="button" id="btnCourse" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-custom-class="custom-popover" data-bs-title="Course Contents" data-bs-content="Declarative and imperative programming, LINQ operators: Where, all,
                             any, contains, orderby and orderbydescending, take, skip, average and aggregate among other
-                            operators.</p>
-                        <div class="url-container">
-                            <div>
-                                <a class="url-course"
+                            operators.">Show details</button>
+                        </div>
+                        <div class="container-url-course">
+                            <a class="url-course" id="font-bold"
                                     href="https://platzi.com/p/maty.dev/curso/4263-linq/diploma/detalle/"
                                     target="_blank">See more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="url-allcourses" href="https://www.linkedin.com/in/mathiasdeveloper/details/certifications/"
-                target="_blank">See all certificates</a>
+            <div class="container-buton-all-courses">
+                <a class="btn btn-outline-light" id="all-courses" href="https://www.linkedin.com/in/mathiasdeveloper/details/certifications/" role="button" target="_blank">See all courses taken</a>
+            </div>
         </section>
         <section id="myprojects" class="section-projects">
-            <div class="container-header-projects">
-                <h1 class="workExperienceTitle">My Projects</h1>
-                <p class="textWork">I made console projects in C# - .NET for university internships. I also programmed in Python for some university papers and for a technical exam at KodLand. As for low-level programming, we simulate programs on the HC08 processor using the WinIDE compiler and simulator. These projects and others can be seen in the following cards:</p>
+            <h1 class="projectsTitle" id="font-bold">My Projects</h1>
+            <div class="container-project-text">
+                <p class="textProjects">I made console projects in C# - .NET for university internships. I also programmed in Python for some university papers and for a technical exam at KodLand. As for low-level programming, we simulate programs on the HC08 processor using the WinIDE compiler and simulator. These projects and others can be seen in the following cards:</p>
             </div>
             <div class="container-projects">
                 <div class="first-container-project">
@@ -310,7 +378,7 @@
                         </div>
                         <div class="third-container-project">
                             <div class="container-title-project">
-                                <h1 class="project-title">Practical Work Design Patterns</h1>
+                                <h1 class="project-title" id="font-bold">Practical Work Design Patterns</h1>
                             </div>
                             <div class="container-description-project">
                                 <div class="sub-container-description-project">
@@ -334,7 +402,7 @@
                         </div>
                         <div class="third-container-project">
                             <div class="container-title-project">
-                                <h1 class="project-title">Good Practices and Clean Code</h1>
+                                <h1 class="project-title" id="font-bold">Good Practices and Clean Code</h1>
                             </div>
                             <div class="container-description-project">
                                 <div class="sub-container-description-project">
@@ -358,7 +426,7 @@
                         </div>
                         <div class="third-container-project">
                             <div class="container-title-project">
-                                <h1 class="project-title">Object Oriented Programming C#</h1>
+                                <h1 class="project-title" id="font-bold">Object Oriented Programming C#</h1>
                             </div>
                             <div class="container-description-project">
                                 <div class="sub-container-description-project">
@@ -382,7 +450,7 @@
                         </div>
                         <div class="third-container-project">
                             <div class="container-title-project">
-                                <h1 class="project-title">LINQ Course - C# and .NET</h1>
+                                <h1 class="project-title" id="font-bold">LINQ Course - C# and .NET</h1>
                             </div>
                             <div class="container-description-project">
                                 <div class="sub-container-description-project">
@@ -406,7 +474,7 @@
                         </div>
                         <div class="third-container-project">
                             <div class="container-title-project">
-                                <h1 class="project-title">Spaceship Game - KodLand</h1>
+                                <h1 class="project-title" id="font-bold">Spaceship Game - KodLand</h1>
                             </div>
                             <div class="container-description-project">
                                 <div class="sub-container-description-project">
@@ -430,7 +498,7 @@
                         </div>
                         <div class="third-container-project">
                             <div class="container-title-project">
-                                <h1 class="project-title">Low Level Pogramming</h1>
+                                <h1 class="project-title" id="font-bold">Low Level Pogramming</h1>
                             </div>
                             <div class="container-description-project">
                                 <div class="sub-container-description-project">
@@ -450,9 +518,9 @@
                 target="_blank">See all repositories</a>
         </section>
         <section id="technologies" class="section-technologies">
-            <div class="container-header-technologies">
-                <h1 class="workExperienceTitle">Technologies</h1>
-                <p class="textWork">During this trajectory described I acquired knowledge in the following technologies:</p>
+            <h1 class="technologiesTitle" id="font-bold">Technologies</h1>
+            <div class="container-text-technologies">
+                <p class="textTechnologies">During this trajectory described I acquired knowledge in the following technologies:</p>
             </div>
             <div class="scroller" data-direction="right" data-speed="slow">
                 <div class="scroller__inner">
@@ -463,6 +531,10 @@
                     <img src="https://imgur.com/WIN1ho3.png" alt="visual studio code logo" />
                     <img src="https://imgur.com/sBkaBfX.png" alt="git logo" />
                     <img src="https://imgur.com/pWf58lI.png" alt="mysql logo">
+                </div>
+            </div>
+            <div class="scroller" data-direction="left" data-speed="slow">
+                <div class="scroller__inner">
                     <img src="https://imgur.com/4rayTet.png" alt="visual studio logo">
                     <img src="https://imgur.com/xmOp7bL.png" alt="csharp logo">
                     <img src="https://imgur.com/YyJs1zG.png" alt=".net logo">
@@ -470,6 +542,10 @@
                     <img src="https://imgur.com/azAldO8.png" alt="python logo">
                     <img src="https://imgur.com/2qVyasi.png" alt="assembler logo">
                     <img src="https://imgur.com/ryxHtKn.png" alt="postman logo">
+                </div>
+            </div>
+            <div class="scroller" data-direction="right" data-speed="slow">
+                <div class="scroller__inner">
                     <img src="https://imgur.com/BpR8VKA.png" alt="nuget logo">
                     <img src="https://imgur.com/91R5Ecg.png" alt="entity framework logo">
                     <img src="https://imgur.com/8cXjsLU.png" alt="linq logo">
@@ -482,64 +558,43 @@
                 </div>
             </div>
             <div class="container-end-technology">
-                <div class="container-i-end">
-                    <p class="text-i-end">Thank you very much for taking the time to appreciate my website. This is the end of my presentation, however, I would love to continue in an interview. Waiting for your response, I say goodbye. Best regards.</p>
-                </div>
+                <p class="text-end-technology">Thank you very much for taking the time to appreciate my website. This is the end of my presentation, however, I would love to continue in an interview. Waiting for your response, I say goodbye. Best regards.</p>
             </div>
          </section>
     </main>
     <footer class="footer-end">
-        <div class="container-aboutme-footer">
-            <div class="title-aboutme-footer">
-                <h1 class="workExperienceTitle">More About Me</h1>
+        <section class="section-footer">
+            <div class="container-map-footer">
+                <div class="subcontainer-text-map-footer">
+                    <p class="text-map-footer">Where's the city of Berazategui located?&#129300</p>
+                </div>
+                <div class="subcontainer-map-footer">
+                    <iframe class="map-footer" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52443.4639522706!2d-58.198394050000005!3d-34.76273375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f348c2fbdbf%3A0x80217bd276933f07!2sBerazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1709408440570!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
             <div class="links-aboutme-footer">
                 <div class="icons-aboutme-footer">
-                    <a href="https://github.com/mathiascabrera" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mathiasdeveloper/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/maty.dev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100068374707095" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-                <div class="social-aboutme-footer">
-                    <a href="https://github.com/mathiascabrera" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/mathiasdeveloper/" target="_blank">Linkedin</a>
-                    <a href="https://www.instagram.com/maty.dev/" target="_blank">Instagram</a>
-                    <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100068374707095" target="_blank">Facebook</a>
+                    <a href="https://github.com/mathiascabrera" class="icon-footer-a" target="_blank"><i class="fa-brands fa-github iconFooter"></i>&nbsp&nbsp&nbspGitHub</a>
+                    <a href="https://www.linkedin.com/in/mathiasdeveloper/" class="icon-footer-a" target="_blank"><i class="fa-brands fa-linkedin-in iconFooter"></i>&nbsp&nbsp&nbspLinkedin</a>
+                    <a href="https://www.instagram.com/maty.dev/" class="icon-footer-a" target="_blank"><i class="fa-brands fa-instagram iconFooter"></i>&nbsp&nbsp&nbspInstagram</a>
+                    <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100068374707095" class="icon-footer-a" target="_blank"><i class="fa-brands fa-facebook iconFooter"></i>&nbsp&nbsp&nbspFacebook</a>
+                    <a href="https://api.whatsapp.com/send?phone=541138565329" class="icon-footer-a" target="_blank"><i class="fa-brands fa-whatsapp iconFooter"></i>&nbsp&nbsp&nbspWhatsApp</a>
+                    <a href="https://t.me/maty_dev" class="icon-footer-a" target="_blank"><i class="fa-brands fa-telegram iconFooter"></i>&nbsp&nbsp&nbspTelegram</a>
                 </div>
             </div>
-        </div>
-        <div class="container-map-footer">
-            <div class="subcontainer-text-map-footer">
-                <p class="text-map-footer">Where's the city of Berazategui located?&#129300</p>
-            </div>
-            <div class="subcontainer-map-footer">
-                <iframe class="map-footer" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52443.4639522706!2d-58.198394050000005!3d-34.76273375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f348c2fbdbf%3A0x80217bd276933f07!2sBerazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1709408440570!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <div class="container-contact-footer">
-            <div class="title-contact-footer">
-                <h1 class="workExperienceTitle">Let's Contact!</h1>
-            </div>
-            <div class="links-contact-footer">
-                <div class="icons-contact-footer">
-                    <a href="https://api.whatsapp.com/send?phone=541138565329" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://t.me/maty_dev" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <div class="container-latest-data-footer">
+                <div class="subcontainer-last-update-footer">
+                    <p class="text-last-update-footer">Last site update: 22 March 2024.</p>
                 </div>
-                <div class="social-contact-footer">
-                    <a href="https://api.whatsapp.com/send?phone=541138565329" target="_blank">WhatsApp</a>
-                    <a href="https://t.me/maty_dev" target="_blank">Telegram</a>
+                <div class="subcontainer-creater-footer">
+                    <p class="text-creater-footer">Site created by <a href="https://github.com/mathiascabrera" class="signature-footer" target="_blank">Mathías Cabrera.</a></p>
                 </div>
             </div>
-        </div>
-        <div class="container-latest-data-footer">
-            <div class="subcontainer-last-update-footer">
-                <p class="text-last-update-footer">Last site update: 3 March 2024.</p>
-            </div>
-            <div class="subcontainer-creater-footer">
-                <p class="text-creater-footer">site created by <a href="https://github.com/mathiascabrera" target="_blank">Mathías Cabrera.</a></p>
-            </div>
-        </div>
+        </section>
+        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
 </body>
 </html>

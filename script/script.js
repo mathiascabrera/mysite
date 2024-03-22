@@ -1,11 +1,37 @@
+//nav-bar scroll
+window.addEventListener("scroll",function(){
+    let navBar = this.document.getElementById("navbar");
+    let iconNavBar = this.document.getElementById("iconNav");
+
+    if(this.window.scrollY>=310){
+        navBar.style.border = "0.2rem solid rgba(195, 195, 195,0.4)";
+        navBar.style.backgroundColor = "rgba(0, 3, 9,0.6)";
+        navBar.style.boxShadow = "0 0.8rem 3.2rem 0 rgba(0, 3, 9, *)";
+        iconNavBar.style.color= "#c3c3c3";
+    }
+    if(this.window.scrollY>=1850){
+        navBar.style.border = "0.2rem solid rgba(195, 195, 195,0.4)";
+        navBar.style.boxShadow = "0 0.8rem 3.2rem 0 rgba(0, 3, 9, 0)";
+        iconNavBar.style.color= "#1b1b1b";
+    }
+    if(this.window.scrollY<310){
+        navBar.style.border = "0.2rem solid rgba(0, 3, 9,0.4)";
+        navBar.style.backgroundColor = "rgba(244, 244, 246,0.8)";
+        navBar.style.boxShadow = "0 0.8rem 3.2rem 0 rgba(0, 3, 9, 0.4)";
+        iconNavBar.style.color= "#000309";
+    }
+})
+
+//menu visibility
 var menu_visible = false;
 var menu = document.getElementById("nav");
 
 function showHideMenu(){
     if(menu_visible == false){
-        menu.style.display="grid";
+        menu.style.display="flex";
+        menu.style.justifyContent="center";
         menu.style.placeItems="center";
-        menu.style.zIndex=1;
+        menu.style.zIndex=100;
         menu_visible = true;
     }
     else{
@@ -15,12 +41,11 @@ function showHideMenu(){
     }
 }
 
-
+//carousel workexperience
 const btnLeft = document.querySelector(".btn-left"),
     btnRight = document.querySelector(".btn-right"),
     slider = document.querySelector("#slider"),
     sliderSection = document.querySelectorAll(".slider-section");
-
 
 btnLeft.addEventListener("click", e => moveToLeft());
 btnRight.addEventListener("click", e => moveToRight());
@@ -60,8 +85,9 @@ function moveToLeft(){
     slider.style.transition = "all ease .6s";
 }
 
+//Carousel Technology
 //infinite horizontal scroll
-const scrollers = document.querySelectorAll(".scroller");
+const scrollers = document.querySelector(".scroller");
 
 // If a user hasn't opted in for recuded motion, then we add the animation
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -87,3 +113,11 @@ function addAnimation() {
     });
   });
 }
+
+//popover
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
+const popover = new bootstrap.Popover('.popover-dismiss', {
+    trigger: 'focus'
+});
