@@ -104,7 +104,7 @@ main {
     position: relative;
 }
 .container-arrow-up{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: right;
     transition: .3s;
@@ -134,8 +134,8 @@ main {
     justify-content: center;
 }
 .container-img-presentation{
-    width: 20rem;
-    height: 20rem;
+    width: 23rem;
+    height: 23rem;
     border: 0.2rem solid rgb(255, 255, 255);
     border-radius: 50%;
     border-left-color: #000309;
@@ -143,9 +143,10 @@ main {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -11rem;
+    top: -13rem;
     padding: 2rem;
     z-index: 99;
+    /* display: none; */
 }
 .img-presentation {
     width: 90%;
@@ -159,45 +160,68 @@ main {
     filter: drop-shadow(0 0 1rem rgb(0, 0, 0, 0.5));
     cursor: pointer;
 }
+.container-icons-main{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
 .icons-main {
-    width: 35rem;
+    width: 80%;
     height: 18rem;
     display: flex;
-    position: absolute;
+    justify-content: center;
+    position: relative;
     z-index: 1;
-    top: 0.5rem;
+    top: -10rem;
 }
 .icons-main a {
+    position: absolute;
+    /* top: 0; */
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: rgb(52, 52, 52);
 }
 .icons-main a:first-child {
-    padding-left: 0.5rem;
+    font-size: 3.1rem;
+    margin-right: 27rem;
+    margin-top: 2rem;
 }
 .icons-main a:nth-of-type(2) {
-    margin-top: 7rem;
+    margin-right: 28rem;
+    margin-top: 11.5rem;
 }
 .icons-main a:nth-of-type(3) {
-    padding-left: 3rem;
-    margin-top: 12rem;
+    margin-right: 18rem;
+    margin-top: 18rem;
 }
 .icons-main a:nth-of-type(4) {
-    padding-left: 5rem;
-    margin-top: 14rem;
+    margin-top: 21rem;
+    /* padding-left: 5rem;
+    margin-top: 14rem; */
 }
 .icons-main a:nth-of-type(5) {
-    padding-left: 5.5rem;
-    margin-top: 12rem;
+    margin-left: 18rem;
+    margin-top: 18rem;
 }
 .icons-main a:nth-of-type(6) {
-    margin-top: 7rem;
-    padding-left: 4rem;
+    margin-left: 28rem;
+    margin-top: 11.5rem;
+}
+.icons-main a:nth-of-type(7) {
+    font-size: 3.1rem;
+    margin-left: 27rem;
+    margin-top: 2rem;
 }
 .icons-main a:hover {
     font-size: 3rem;
     color: rgb(255, 255, 255);
 }
+.icons-main a:first-child:hover,
+.icons-main a:nth-of-type(7):hover{
+    font-size: 3.5rem;
+    color: black;
+}
+
 .container-presentation {
     width: 100%;
     margin-top: 21rem;
