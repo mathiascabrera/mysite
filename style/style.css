@@ -13,7 +13,8 @@ html {
     height: 400px;
     background-color: #f4f4f6;
 }
-.nav-bar {
+.nav-bar,
+.arrow-up-container{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -30,7 +31,7 @@ html {
     line-height: 5rem;
     cursor: pointer;
     transition: .3s;
-    z-index: 101;
+    z-index: 105;
 }
 .nav-bar:hover{
     background-color: rgba(0, 3, 9, 0.7);
@@ -101,6 +102,30 @@ html {
 }
 main {
     position: relative;
+}
+.container-arrow-up{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    transition: .3s;
+}
+.arrow-up-container{
+    display: none;
+    margin-right: 0;
+    bottom: 0;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border: 0.2rem solid rgba(195, 195, 195,0.4);
+    background-color: rgba(7, 8, 10,0.8);
+    box-shadow: 0 0 0.3rem 0 rgba(0, 3, 9, 0.8);
+    transition: .3s;
+    z-index: 102;
+}
+#a-arrow-up{
+    text-decoration: none;
+}
+#arrow-up{
+    color: #ffff;
 }
 .sectionPresentation {
     height: 50rem;

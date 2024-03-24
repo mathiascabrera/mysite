@@ -1,26 +1,35 @@
-//nav-bar scroll
-let menu_visible = false;
-let menu = document.getElementById("nav");
-let iconHamburger = document.getElementById("iconNav");
-let iconX = document.getElementById("iconNavX");
-let containIcon = document.getElementById("navbar");
+//nav-bar scroll and arrow up scroll
+let menu_visible = false,
+menu = document.getElementById("nav"),
+iconHamburger = document.getElementById("iconNav"),
+iconX = document.getElementById("iconNavX"),
+containIcon = document.getElementById("navbar"),
+
+iconArrow= document.getElementById("arrow-up"),
+containArrow = document.getElementById("arrow-up-container"),
+
+sectionPresentation = document.getElementById('presentation').offsetTop,
+sectionWorkExperience = document.getElementById('workexperience').offsetTop,
+sectionCoursesTaken = document.getElementById('coursestaken').offsetTop,
+sectionProjects = document.getElementById('myprojects').offsetTop,
+sectionTechnologies = document.getElementById('technologies').offsetTop,
+sectionFooter = document.getElementById('footer').offsetTop;
 
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
-      let scrollPosition = (window.scrollY - 370);
 
-      let sectionPresentation = document.getElementById('presentation').offsetTop;
-      let sectionWorkExperience = document.getElementById('workexperience').offsetTop;
-      let sectionCoursesTaken = document.getElementById('coursestaken').offsetTop;
-      let sectionProjects = document.getElementById('myprojects').offsetTop;
-      let sectionTechnologies = document.getElementById('technologies').offsetTop;
-      let sectionFooter = document.getElementById('footer').offsetTop;
-        
+    let scrollPosition = (window.scrollY - 370);
+
     if (scrollPosition > sectionPresentation) {
         containIcon.style.border = "0.2rem solid rgba(195, 195, 195,0.4)";
         containIcon.style.backgroundColor = "rgba(7, 8, 10,0.8)";
-        containIcon.style.boxShadow = "0 0.8rem 3.2rem 0 rgba(0, 3, 9, *)";
+        containIcon.style.boxShadow = "0 0.8rem 3.2rem 0 rgba(0, 3, 9, 0.8)";
         iconHamburger.style.color= "#f4f4f6";
+
+        containArrow.style.display="flex";
+        containArrow.style.borderColor="rgba(195, 195, 195,0.4)";
+        containArrow.style.backgroundColor= "rgba(7, 8, 10,0.8)";
+        iconArrow.style.color= "#ffff";
     }
     if (scrollPosition > sectionProjects) {
         containIcon.style.border = "0.2rem solid rgba(0, 3, 9,0.4)";
@@ -45,6 +54,24 @@ document.addEventListener('DOMContentLoaded', function() {
         containIcon.style.backgroundColor = "rgba(244, 244, 246,0.8)";
         containIcon.style.boxShadow = "0 0.8rem 3.2rem 0 rgba(0, 3, 9, 0.4)";
         iconHamburger.style.color= "#000309";
+
+        containArrow.style.display="none";
+    }
+    if(scrollPosition + 600 > sectionProjects){
+        containArrow.style.border="0.2rem solid rgba(0, 3, 9,0.4)";
+        containArrow.style.backgroundColor= "rgba(244, 244, 246, 0.8)";
+        iconArrow.style.color= "#000309";
+
+    }
+    if (scrollPosition + 600 > sectionTechnologies) {
+        containArrow.style.borderColor="rgba(0, 3, 9,0.4)";
+        containArrow.style.backgroundColor= "rgba(255, 255, 252, 0.8)";
+        iconArrow.style.color= "#000309";
+    }
+    if(scrollPosition + 600 > (sectionFooter-450)){
+        containArrow.style.borderColor="rgba(195, 195, 195,0.4)";
+        containArrow.style.backgroundColor= "rgba(7, 8, 10,0.8)";
+        iconArrow.style.color= "#ffff";
     }
     })});
 
