@@ -104,7 +104,6 @@ main {
     position: relative;
 }
 .container-arrow-up{
-    /* width: 100%; */
     display: flex;
     justify-content: right;
     transition: .3s;
@@ -146,7 +145,6 @@ main {
     top: -13rem;
     padding: 2rem;
     z-index: 99;
-    /* display: none; */
 }
 .img-presentation {
     width: 90%;
@@ -176,7 +174,6 @@ main {
 }
 .icons-main a {
     position: absolute;
-    /* top: 0; */
     text-decoration: none;
     font-size: 2.7rem;
     color: rgb(52, 52, 52);
@@ -196,8 +193,6 @@ main {
 }
 .icons-main a:nth-of-type(4) {
     margin-top: 21rem;
-    /* padding-left: 5rem;
-    margin-top: 14rem; */
 }
 .icons-main a:nth-of-type(5) {
     margin-left: 18rem;
@@ -221,7 +216,6 @@ main {
     font-size: 3.5rem;
     color: black;
 }
-
 .container-presentation {
     width: 100%;
     margin-top: 21rem;
@@ -326,12 +320,12 @@ main {
     overflow: hidden;
 }
 .carouseles {
-    width: 300%;
+    width: 6000%;
     height: 100%;
     display: flex;
 }
 .slider-section {
-    width: calc(100% / 3);
+    width: calc(100% / 60);
     height: 100%;
 }
 .slider-section img {
