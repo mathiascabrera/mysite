@@ -1,0 +1,267 @@
+<!-- https://imgur.com/klMNhJq.png ASSEMBLER
+            https://imgur.com/LpccpSI.png C#
+        https://imgur.com/FaQZccP.png HTML CSS JS
+    https://imgur.com/AvRBWAc.png PYTHON -->
+    <!-- https://github.com/mathiascabrera/metodologia_de_la_programacion_1 -->
+    
+    
+    Para Slider infinito :
+    .NET : https://imgur.com/Ncn9Q6j.png
+    ASP.NET : https://imgur.com/hzKfBlB.png
+    ASSEMBLER : https://imgur.com/iCn2f0x.png
+    Visual Studio : https://imgur.com/Qd0njl4.png
+    GIT : https://imgur.com/rP93JXZ.png
+    C# : https://imgur.com/W9aw3td.png
+    MYSQL : https://imgur.com/gXRp1IC.png
+    VStudioCode : https://imgur.com/VlVhnuq.png
+    Python : https://imgur.com/klUbpNG.png
+    JS : https://imgur.com/RvNjP4f.png
+    Bootstrap : https://imgur.com/7UMD3L3.png
+    Css : https://imgur.com/UwURVoU.png
+    HTML : https://imgur.com/C1dlc7J.png
+
+
+    https://coolors.co/palettes/popular/000000
+
+
+Icono Platzi:
+<!-- https://platzi.com/tutoriales/1050-basico-programacion/1436-crea-tu-propia-fuente-de-iconos-al-mejor-estilo-de-fontawesome-ionicons-y-materialicons-from-zero-to-hero/ -->
+            <!-- https://dropcoding.com/efecto-desenfocado-blur-css/#:~:text=El%20efecto%20de%20desenfocado%20en,puede%20aplicar%20con%20este%20ejemplo. -->
+            
+            
+            
+Efecto Hover con Js IMPORTANTE PARA EL NAVBAR Y EL ARROW UP
+https://www.aulascript.com/trucos/t7.htm
+
+
+
+
+
+https://www.freecodecamp.org/espanol/news/explicacion-de-formas-css-como-dibujar-un-circulo-un-triangulo-y-amas-usando-solamente-css/
+
+
+
+Logos para fondo blanco (Technologies).
+https://imgur.com/DKU3yfH.png (Asp.Net)
+https://imgur.com/LoqSob9.png (SQL SERVER)
+https://imgur.com/d2xLdfM.png (LINQ)
+https://imgur.com/cCQHRBG.png (CorelDraw)
+
+
+Logos (Technologies).
+https://imgur.com/vGHNo71.png HTML
+https://imgur.com/6Z0nGzO.png CSS
+https://imgur.com/7MPj5AB.png BOOTSTRAP
+https://imgur.com/tYZphXM.png JAVASCRIPT
+https://imgur.com/WIN1ho3.png VSCODE
+https://imgur.com/sBkaBfX.png GIT
+https://imgur.com/pWf58lI.png MYSQL
+https://imgur.com/4rayTet.png VISUAL STUDIO
+https://imgur.com/xmOp7bL.png C#
+https://imgur.com/YyJs1zG.png .NET
+https://imgur.com/SLHzNhb.png ASP.NET
+https://imgur.com/azAldO8.png PYTHON
+https://imgur.com/2qVyasi.png ASSEMBLER
+https://imgur.com/ryxHtKn.png POSTMAN
+https://imgur.com/BpR8VKA.png NUGET
+https://imgur.com/91R5Ecg.png ENTITY FRAMEWORK
+https://imgur.com/8cXjsLU.png LINQ
+https://imgur.com/oy87pQE.png SQL SERVER
+https://imgur.com/MvBwh6E.png PHOTOSHOP
+https://imgur.com/lFAkCRQ.png CORELDRAW
+https://imgur.com/RGBXHkD.png EXCEL
+https://imgur.com/aqyxLnj.png WORD
+https://imgur.com/63LWqV2.png POWERPOINT
+
+
+
+
+Todas las imágenes del Carousel Work Experience Section:
+
+<div id="slider" class="carouseles">
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/wmvbkqV.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/RnlMBYP.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/6ThKG06.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/xRTn9iX.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/v3ovidS.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/wbK0Ul2.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/TBSYL7x.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/VUdJzNz.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/f0v9v0J.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/mEPDkcj.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/YMpb5oP.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/PvURly9.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/9JfovGX.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/HNyi9QJ.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/nizNFkq.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/fMpBG7D.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/pbjQgok.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/4u1tCcR.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/RDQNaXJ.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/IxegF8F.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/HtSHNTI.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/ZPqLn3f.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/hD1l95V.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/sMBXgII.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/e78dPpx.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/NZz3msX.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/hspdEOx.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/lRfrTgE.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/g4zLm7H.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/O36QkKM.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/8GtTlTV.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/M8SQhX1.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/0RldPhm.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/AKgbvRu.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/HmrZYzV.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/SDVosYu.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/NjDyCVw.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/5XrTD2T.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/tqKnLpz.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/6qZC2oO.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/eHUMVAh.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/EIcuSpB.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/PR1w8uY.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/njVvFoM.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/fyebWAw.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/QUyPDiN.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/k98qJNi.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/LIRcIdJ.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/gprbiYt.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/8bo08Y0.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/sy9YRRi.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/bwsfCqi.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/NdEjJof.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/cqvT02S.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/QHNDOcc.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/Faz8aDL.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/q1kjuqF.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/xhDM96r.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/q4a04g9.png" alt="">
+                    </section>
+                    <section class="slider-section">
+                        <img class="img-slider-section" src="https://imgur.com/NItwdBI.png" alt="">
+                    </section>
+                </div>
+                
+    
+    
+                
+background degradado con animación : https://codepen.io/andytran/pen/MaRqwd
