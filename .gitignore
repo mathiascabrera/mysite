@@ -2,7 +2,6 @@
 *.png
 *.cdr
 *.psd
-*.txt
 certificates/
 img/
 pruebas/
