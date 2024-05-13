@@ -132,7 +132,7 @@ main {
     color: #ffff;
 }
 .sectionPresentation {
-    height: 50rem;
+    height: 60rem;
     background-color: #000309;
     display: flex;
     justify-content: center;
@@ -235,7 +235,7 @@ main {
 .text-presentation {
     font-size: 1.6rem;
     color: #c3c3c3;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0, 0.5rem;
 }
 .text-presentation a {
@@ -256,12 +256,16 @@ main {
     align-items: center;
     justify-content: center;
 }
+.sub-section-workExp{
+    width: 85%;
+}
 .workExperienceTitle,
 .coursesTaken-title,
 .projectsTitle,
 .technologiesTitle,
 .moreAboutMe-title,
 .gratefulnessTitle{
+    text-align: center;
     font-size: 3.8rem;
     color: #fff;
     text-shadow: 1px 1px 5px  #000000;
@@ -285,17 +289,21 @@ main {
     width: 85%;
     margin-top: 2rem;
 }
+.container-text-work{
+    width: 100%;
+}
 .textWork,
 .text-preCarousel,
 .textQualities,
 .coursesTaken-text,
+.textCourse-adittional,
 .textProjects,
 .textTechnologies,
 .text-end-technology,
 .text-map-footer{
     font-size: 1.6rem;
     color: #c3c3c3;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0, 0.5rem;
 }
 .container-ul-work,
@@ -307,12 +315,18 @@ main {
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
+.container-qualities-ul{
+    width: 100%;
+}
+.container-ul-work{
+    width: 100%;
+}
 .ul-work,
 .ul-qualities{
     width: 85%;
     color: #c3c3c3;
     list-style-type: "- ";
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     column-count: 2;
     column-gap: 2rem;
 }
@@ -323,7 +337,7 @@ main {
     align-items: center;
 }
 .container-text-preCarousel{
-    width: 85%;
+    width: 100%;
     margin-bottom: 1rem;
 }
 .text-preCarousel{
@@ -331,7 +345,7 @@ main {
 }
 .container-carousel {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 300%;
     box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.66);
     border-radius: 1.5rem;
@@ -382,13 +396,14 @@ main {
     color: #fff;
 }
 .article-qualities{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .container-qualities{
-    width: 85%;
+    width: 100%;
     margin-top: 4rem;
 }
 .qualities {
@@ -410,14 +425,14 @@ main {
     padding-bottom: 3.9rem;
 }
 .container-courses {
-    width: 80%;
+    width: 85%;
     height: auto;
     margin: 2rem 0 2rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
     grid-row-gap: 3.5rem;
     grid-column-gap: 3.5rem;
-    justify-items:flex-start;
+    justify-items:center;
     align-items: center;
     text-align: center;
 }
@@ -553,6 +568,10 @@ main {
 #all-courses:hover{
     -webkit-box-reflect:below -0.2rem linear-gradient(transparent, #0005);
 }
+.container-adittional-course{
+    width: 85%;
+    margin-top: 3rem;
+}
 .container-buton-all-courses{
     padding-top: 7rem;
 }
@@ -578,23 +597,24 @@ main {
     color: #000309;
 }
 .container-projects{
-    width: 100%;
+    width: 85%;
     height: auto;
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(37rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
     grid-row-gap: 3rem;
-    grid-column: 1rem;
+    grid-column-gap: 3rem;
     justify-items: center;
+    justify-content: center;
 }
 .area-complete-element{
-    width: 36rem;
+    width: 100%;
     height: 11.3rem;
     display: flex;
     justify-content: center;
 }
 .sub-area-project{
-    width: 36rem;
+    width: 100%;
     height: 11.3rem;
     display: flex;
     justify-content: end;
@@ -602,11 +622,10 @@ main {
     position: relative;
 }
 .first-container-project1{
-    width: 30rem;
+    width: 85%;
     height: 10rem;
     background-color: #000309;
     border-radius: 25rem 7rem 5rem 15rem;
-    margin-right: 0.5rem;
     position: relative;
 }
 .second-container-absolute{
@@ -666,7 +685,7 @@ main {
     background-color: #fffffc;
 }
 .scroller {
-    width: 100%;
+    width: 85%;
 }
 .scroller-second{
     display: none;
@@ -718,12 +737,11 @@ main {
 }
 .technologies-list{
     width: 100%;
-    text-align: center;
     padding: 1rem 0 0 0;
     margin: 0;
 }
 .text-technologies-list{
-    width: 90%;
+    width: 85%;
     font-size: 1.5rem;
     color: #d4d4d4;
 }
@@ -838,17 +856,12 @@ main {
     text-decoration: none;
     color: #ffff;
 }
-@media (min-width: 756px) {
-    .sectionPresentation {
-        height: 45rem;
-    }
-}
 @media (min-width: 936px) {
-    .sectionPresentation {
-        height: 40rem;
+    .sectionPresentation{
+        height: 49rem;
     }
-    .scroller{
-        width: 80%;
+    .container-qualities{
+        width: 100%;
     }
     .scroller-first{
         display: none;
@@ -856,41 +869,43 @@ main {
     .scroller-second{
         display: block;
     }
-    .technologies-list{
-        width: 85%;
-    }
-    .container-end-technology{
-        width: 55%;
-    }
     .section-gratefulness{
         padding-bottom: 6rem;
     }
     .first-container-footer{
+        width: 85%;
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .container-map-footer{
-        width: 50%;
+        width: 60%;
+        align-items: start;
     }
     .map-footer{
         width: 100%;
         height: 35rem;
     }
     .links-aboutme-footer{
-        width: auto;
+        width: 40%;
         margin-top: 0;
+        justify-content: end;
+        align-items: end;
     }
     .subcontainer-map-footer{
+        width: 100%;
         padding: 0;
         border-bottom: 0;
-        padding: 0 4rem 0 0;
+        padding: 0 10rem 0 0;
         border-right: 0.1rem solid #616060;
     }
     .container-latest-data-footer{
-        width: 40%;
+        width: 85%;
         flex-direction: row;
-        align-items: start;
+    }
+    .text-last-update-footer{
+        text-align: left;
+    }
+    .text-creater-footer{
+        text-align: right;
     }
 }
 @media (min-width: 1100px){
@@ -1102,6 +1117,7 @@ main {
         width: 100%;
     }
     .text-presentation{
+        text-align: left;
         padding: 3rem 0 0 0;
         color: #000309;
     }
@@ -1129,7 +1145,7 @@ main {
         grid-area: carousel;
     }
     .container-carousel{
-        width: 80%;
+        width: 100%;
         height: 80%;
     }
     .article-qualities{
@@ -1138,7 +1154,7 @@ main {
     .container-text-preCarousel{
         padding-top: 3rem;
     }
-    .section-workExp{
+    .sub-section-workExp{
         height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1147,8 +1163,9 @@ main {
         'titleWork titleWork'
         'textwork1 carousel'
         'qualities carousel';
+        grid-gap: 5rem;
         justify-items: center;
-        align-items: center;
+        align-items: start;
     }
     .technologies-gratefulness{
         display: flex;
