@@ -247,7 +247,7 @@ main {
     height: auto;
     box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
-        url("https://imgur.com/eHW0c6u.jpg");
+        url("https://imgur.com/eHW0c6u.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -338,7 +338,7 @@ main {
     overflow: hidden;
 }
 .carouseles {
-    width: 3600%;
+    width: 3900%;
     height: 100%;
     background-color: rgba(7, 8, 10,0.2);
     display: flex;
@@ -346,7 +346,7 @@ main {
     align-items: center;
 }
 .slider-section {
-    width: calc(100% / 36);
+    width: calc(100% / 39);
     height: 100%;
 }
 .img-slider-section {
@@ -428,6 +428,13 @@ main {
     flex-direction: column;
     align-items: center;
     position: relative;
+    cursor: pointer;
+}
+.course:hover{
+    .container-sub-course{
+        box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.445);
+        background: linear-gradient(to top, rgba(26, 36, 45, 0.4), rgba(48, 98, 151, 0.4));
+    }
 }
 .container-sub-course{
     width: 100%;
@@ -437,6 +444,7 @@ main {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(to top, rgba(36, 55, 71,0.4), rgba(75, 116, 160,0.4));
+    transition: .2s;
 }
 .container-img-course{
     width: 100%;
@@ -449,6 +457,7 @@ main {
     height: 100%;
     border-radius: 1rem;
     object-fit: cover;
+    transition: .2s;
 }
 .img-course:hover{
     box-shadow: 0 0 3.2rem 0 rgba(16, 16, 16, 0.66);
@@ -539,6 +548,10 @@ main {
 #all-courses{
     --bs-btn-font-size: 1.5rem;
     font-weight: bold;
+    transition: .2s;
+}
+#all-courses:hover{
+    -webkit-box-reflect:below -0.2rem linear-gradient(transparent, #0005);
 }
 .container-buton-all-courses{
     padding-top: 7rem;
@@ -729,9 +742,6 @@ main {
     background-color: #07080a;
     height: auto;
 }
-.container-dragonball{
-    display: none;
-}
 .section-footer{
     height: auto;
     padding-bottom: 1rem;
@@ -786,6 +796,15 @@ main {
     font-size: 1.6rem;
     text-decoration: none;
     color: #c3c3c3;
+    transition: .2s;
+}
+.icon-footer-a:hover{
+    font-size: 1.8rem;
+    font-weight: bold;
+    -webkit-box-reflect:below -0.9rem linear-gradient(transparent, #0005);
+    .iconFooter{
+        font-size: 2rem;
+    }
 }
 .iconFooter{
     font-size: 1.8rem;
@@ -845,30 +864,6 @@ main {
     }
     .section-gratefulness{
         padding-bottom: 6rem;
-    }
-    .container-img-gratefulness{
-        display: none;
-    }
-    .footer-end{
-        position: relative;
-    }
-    .container-dragonball{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        position: absolute;
-        bottom: 57.4rem;
-    }
-    .first-img-dragon-ball{
-        padding-left: 2rem;
-        height: 25rem;
-    }
-    .second-picture-dragonball{
-        padding: 0 2rem 2.2rem 0;
-    }
-    .second-img-dragon-ball{
-        height: 20rem;
     }
     .first-container-footer{
         display: flex;
@@ -944,8 +939,7 @@ main {
     .sectionName,
     .sectionPresentation,
     .scroller-second,
-    .section-technologies,
-    .container-dragonball{
+    .section-technologies{
         display: none;
     }
     .container-picture-aboutme{
